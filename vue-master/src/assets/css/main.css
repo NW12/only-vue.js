@@ -1,0 +1,206 @@
+body{
+	font-size: 16px;
+	font-family: Tahoma, 'Microsoft Yahei', Simsun;
+}
+
+header {
+	width: 100%;
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #155799, #159957);
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+.header-title{
+	font-size: 18px;
+	color: #ffffff;
+}
+.add-bill{
+	position: absolute;
+	right: 5%;
+	bottom: 13px;
+	color: #ffffff;
+}
+.category{
+	position: absolute;
+	left: 5%;
+	color: #ffffff;
+	bottom: 13px;
+}
+
+.cate-container{
+	display: none;
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #155799, #159957);
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #fff;
+}
+.cate-container a{
+	color: #ffffff;
+	margin: 0 5%;
+}
+
+.bill-item{
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px dashed #ccc;
+	padding-left: 5%;
+	position: relative;
+}
+.bill-item:nth-of-type(odd){
+	background: #FBFBFB;
+}
+.bill-item>span{
+	margin-right: 5%;
+}
+.bill-item .title{
+	color: #555;
+}
+.income-icon{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	background: #159957;
+	color: #fff;
+}
+span.income-icon+span.income-num{
+	color: #159957;
+}
+.bill-date{
+	position: absolute;
+	right: 5%;
+	color: #ccc;
+}
+.bill-revise{
+	background: #d74c3d;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	margin-left: 0;
+	right: 0;
+	top: 0;
+	padding: 5px 10px;
+}
+.bill-revise>span{
+	margin: 0 5px;
+	color: #fff;
+}
+
+/*编辑页*/
+.edit-bill{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.cancel-edit{
+	position: absolute;
+	left: 5%;
+	color: #ffffff;
+	bottom: 10px;
+}
+.confirm{
+	position: absolute;
+	right: 5%;
+	color: #ffffff;
+	bottom: 10px;
+}
+.opts-item{
+	padding: 10px 0 10px 25px;
+	border-bottom: 1px solid #ccc;
+}
+.opts-container{
+	float: left;
+	width: 40px;
+	text-align: center;
+	margin-right: 5%;
+}
+.opts-item .icon{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	background: #159957;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.opts-item .close-icon{
+	background: #FE8988;
+}
+.opts-item .title{
+	color: #555;
+}
+
+/*计算器*/
+.calculator-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	z-index: 9999;
+}
+.result-container{
+	width: 100%;
+	padding: 10px 5%;
+	height: 60px;
+	line-height: 40px;
+	box-sizing: border-box;
+	background: #EEEEEE;
+}
+.result-container .icon{
+	float: left;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	background: #159957;
+	color: #fff;
+	margin-right: 10px;
+}
+.result-container .close-icon{
+	background: #FE8988;
+}
+#selectStyle{
+	display: inline;
+}
+.bill-num{
+	float: right;
+	font-size: 20px;
+	font-weight: 700;
+}
+.calculator{
+	z-index: 9999;
+}
+.calculator table{
+	border-collapse: collapse;
+	background: #EEEEEE;
+}
+.calculator td{
+	box-sizing: border-box;
+	width: 25%;
+	padding: 10px;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	font-size: 22px;
+	color: #555;
+	border: 1px solid #ccc;
+}	
